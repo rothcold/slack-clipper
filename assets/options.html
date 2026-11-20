@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Slack Clipper · Settings</title><link rel="icon" href="icons/48.png"><link rel="stylesheet" href="options.css"><script defer src="options.js"></script></head>
+<body><main>
+  <header><div class="brand"><img src="icons/48.png" alt="" width="34" height="34">Slack Clipper</div><span class="tag">Settings</span></header>
+  <h1>Where to clip.</h1><p class="intro">One toolbar click sends a page to one Slack channel.</p>
+  <section aria-labelledby="dest-title" class="card"><div class="card-head"><h2 id="dest-title">Destination</h2><span id="state" class="state">Loading…</span></div>
+  <form id="form" autocomplete="off">
+    <fieldset id="fields" disabled><label for="label">Channel label</label><input id="label" type="text" required maxlength="80" placeholder="#reading-room" aria-describedby="label-hint"><p class="hint" id="label-hint">A reminder for you. The webhook, not this label, selects the channel.</p>
+    <label for="hook">Incoming webhook</label><input type="password" id="hook" required maxlength="512" placeholder="Paste your Slack webhook URL" spellcheck="false" autocomplete="off" aria-describedby="hook-hint"><p class="hint" id="hook-hint">Use the hooks.slack.com URL from your Slack app. A saved URL is never shown again.</p>
+    <div class="actions"><button type="submit">Save destination</button><button id="forget" type="button" class="secondary" hidden>Forget destination</button></div></fieldset>
+  </form><p id="feedback" role="status" aria-live="polite">Saving does not send a message.</p></section>
+  <section class="privacy" aria-labelledby="privacy-title"><h2 id="privacy-title">What leaves this browser?</h2><p>Only when you click the toolbar icon: the page title, full URL (including query and fragment), and your selection or readable article. Long text is sent in numbered messages, about one per second. Oversized clips are refused, never shortened. Check for private information first.</p><p><strong>Page access:</strong> activeTab and scripting read the current page on click, not in the background. <strong>Network access:</strong> only the Slack webhook host is requested. Messages go directly to Slack.</p><p>The secret stays in this extension’s local database, not browser sync. No clip history, analytics, or cloud extraction. Anyone with the webhook can post to its channel.</p></section>
+</main></body></html>

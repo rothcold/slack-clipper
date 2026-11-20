@@ -1,0 +1,20 @@
+{
+  "name": "slack-clipper",
+  "version": "1.0.2",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "lint": "biome lint src tests scripts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "node scripts/build.mjs",
+    "lint:firefox": "web-ext lint --source-dir dist/firefox --no-config-discovery --warnings-as-errors"
+  },
+  "devDependencies": {
+    "@mozilla/readability": "0.6.0",
+    "@biomejs/biome": "2.6.8", "@types/chrome": "0.3.7", "esbuild": "0.28.2",
+    "fflate": "0.8.3", "jsdom": "26.1.0", "tsx": "4.23.15",
+    "typescript": "5.9.3", "web-ext": "10.8.0"
+  }
+}

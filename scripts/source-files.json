@@ -1,0 +1,10 @@
+[
+  "README.md", "RELEASE-1.0.1.md", "RELEASE-1.0.2.md", "package.json", "package-lock.json", "tsconfig.json",
+  "manifests/base.json", "manifests/chrome.json", "manifests/firefox.json",
+  "src/background.ts", "src/clip.ts", "src/config.ts", "src/flow.ts", "src/options.ts", "src/page.ts", "src/semantics.ts", "src/rich.ts", "src/slack.ts", "src/store.ts",
+  "tests/extract.test.ts", "tests/format.test.ts", "tests/fixture-helpers.ts", "tests/fixtures/github-readme.html", "tests/flow.test.ts", "tests/readability.test.ts", "tests/slack.test.ts",
+  "assets/icon.svg", "assets/options.css", "assets/options.html",
+  "assets/icons/16.png", "assets/icons/32.png", "assets/icons/48.png", "assets/icons/128.png",
+  "vendor/readability/LICENSE.md", "vendor/readability/NOTICE.txt", "vendor/readability/Readability.cjs", "vendor/readability/Readability.d.cts", "vendor/readability/upstream.patch",
+  "scripts/build.mjs", "scripts/source-files.json"
+]
